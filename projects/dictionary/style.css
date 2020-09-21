@@ -48,9 +48,8 @@ input{
     display: block;
     padding:10px;
     font-size: 1.2em;
-}
-input[type="submit"]{
     border:0px;
+}
 input[type="submit"]:hover{
     background:lightblue;
 }
