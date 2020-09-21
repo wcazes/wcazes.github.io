@@ -34,7 +34,7 @@ h3{
 }
 p{
     margin:10px 0px;
-    font-size: 1.8em;
+    font-size: 1.5em;
 }
 form{
     background:#dfdfdf;
@@ -49,6 +49,8 @@ input{
     padding:10px;
     font-size: 1.2em;
 }
+input[type="submit"]{
+    border:0px;
 input[type="submit"]:hover{
     background:lightblue;
 }
@@ -68,7 +70,7 @@ input[type="submit"]:hover{
 }
 img{
     display: block;
-    margin:100px auto;
+    margin:50px auto;
     width: 50px;
     text-align: center;
 }
