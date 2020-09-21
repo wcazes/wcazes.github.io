@@ -50,8 +50,13 @@ input{
     font-size: 1.2em;
     border:0px;
 }
+input[type="submit"]{
+    background:#666;
+    color: #efefef;
+}
 input[type="submit"]:hover{
     background:lightblue;
+    color:#666;
 }
 .credit{
     text-align: center;
