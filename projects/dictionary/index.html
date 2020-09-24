@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Dictionary</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <section>
+                <header>
+                    <h1>Dictionary</h1>
+                </header>
+            </section>
+
+            <section>
+                <form id="form">
+                    <input type="text" placeholder="Enter a word..." name="search" id="search" required autocomplete="off">
+                    <input type="submit">
+                </form>
+                <p class="credit">Built by William Cazes</p>
+
+            </section>
+            <div class="loading" id="loading"><img src="loading.gif" alt="loading"></div>
+            <section id="search-result">
+                <h2 id="word"><span id="pos"></span></h2>
+                <p id="def"></p>
+            </section>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
+
+
