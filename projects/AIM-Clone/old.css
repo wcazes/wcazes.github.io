@@ -58,6 +58,7 @@ a{color:#2f3192;}
   flex-direction:column;
 }
 input,select,option{
+  background:#fff;
   padding:10px;
   margin-bottom:5px;
   font-size: 1em;
