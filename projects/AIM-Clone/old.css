@@ -1,0 +1,97 @@
+*{
+  box-sizing: border-box;
+  margin:0px;
+}
+
+body{
+  margin:10px 0px;
+  font-size: 18px;
+  background:#222;
+}
+a{color:#2f3192;}
+
+.container{
+  background: #ece9d8;
+  margin:auto;
+  width: 100%;
+  min-width:320px;
+  max-width:480px;
+  padding:10px;
+}
+.logo{
+  width:100%;
+}
+.login h3{
+  font-size:20px;
+  margin:10px 0px;
+}
+.meta{
+  padding:5px 0px;
+  margin:3px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.icons{
+  padding:0px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.icon{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px;
+  /* background: #efefef; */
+  border-radius:5px;
+  text-align: center;
+}
+.icon:last-child{
+  margin-left:40px;
+}
+
+.login{
+  display: flex;
+  flex-direction:column;
+}
+input,select,option{
+  padding:10px;
+  margin-bottom:5px;
+  font-size: 1em;
+  border:0;
+  border-radius: 3px;
+  letter-spacing: 2px;
+}
+.cred, button{
+  padding:10px;
+  text-align: center;
+  color:#222;
+}
+
+.icon a {
+  text-decoration: none;
+}
+.icon h4{
+  color: #222;
+}
+.icon h4::first-letter{
+  text-decoration: underline;
+}
+.fa-key{
+  color:#990000;
+}
+.icon .fa-question, .icon .fa-wrench{
+  color:#ccb615;
+}
+.icon .fa-running{
+  color:green;
+}
+
+@media(min-width:768px){
+  .container{
+    width:320px;
+  }
+}

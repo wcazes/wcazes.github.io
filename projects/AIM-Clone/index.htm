@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link id="page-style" rel="stylesheet" href="" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img id="logo" class="logo new" src="imgs/aol.png" alt="" />
+    </header>
+    <div class="login">
+      <h3> 
+        <label id="username" for="">Username <i class="fas fa-xs fa-key"></i></label>
+      </h3>
+      <select name="username" onchange="this.nextElementSibling.value=this.value">
+        <option value="wcazes">wcazes</option>
+      </select>
+      
+      <a href="#" id="text">Get a Username</a>
+      <label for="password"><h3>Password</h3></label>
+      <input type="password" name="password" id="" value="averybadpassword" style="-webkit-text-security: square;"/>
+      <a href="#">Forgot Password</a>
+      <div class="meta">
+        <div>
+        <input type="checkbox" name="savePassword" id="" checked />
+        <span>Save password</span>
+        </div>
+        <div>
+        <input type="checkbox" name="autoLogin" id="" />
+        <span>Auto-login</span>
+        </div>
+      </div>
+      <div class="icons">
+        <div class="icon">
+          <a href="#">
+            <i class="fas fa-2x fa-question"></i>
+            <h4>Help</h4>
+          </a>
+        </div>
+        <div class="icon">
+          <a href="">
+            <i class="fas fa-2x fa-wrench"></i>
+            <h4>Setup</h4>
+          </a>
+        </div>
+        <div class="icon">
+          <a href="">
+            <i class="fas fa-2x fa-running"></i>
+            <h4>Sign On</h4>
+          </a>
+        </div>
+    </div>
+    <div style="text-align:center; margin-bottom:5px;">Version: 1.0.00001</div>
+    
+    <button id="switch">switch</button>
+  </div>
+
+
+<div class="cred">created by William Cazes</div>
+<script src="index.js"></script>
+</body>
+</html>

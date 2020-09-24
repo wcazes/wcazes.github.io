@@ -1,0 +1,89 @@
+*{
+  box-sizing: border-box;
+  margin:0px;
+}
+
+body{
+  position: relative;
+  font-size: 18px;
+  margin:10px 0px;
+  background :#dfdfdf;
+  color:#626262;
+}
+
+a{color:#626262;}
+
+.container{
+  background: #fff;
+	margin:auto;
+  width: 100%;
+  max-width:480px;
+  padding:10px;
+}
+.logo{
+  width:100%;
+  filter: opacity(.7);
+  /* height: 100%;
+  border-radius: 50%; */
+
+}
+.login h3{
+  font-size:20px;
+  margin:10px 0px;
+  text-transform: uppercase;
+}
+.meta{
+  padding:5px 10px;
+  margin:3px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  /* background: #efefef; */
+  border-radius:5px;
+  text-align: center;
+}
+.icon .fa-question, .icon .fa-wrench, .icon .fa-running{color:#9eb0d3;}
+
+.icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.icons a h4{
+  display: none;
+}
+/* .meta a:last-child{margin-left: 30px;} */
+.login{
+  display: flex;
+  flex-direction:column;
+}
+
+input,select,option{
+  background: #9eb0d3;
+  padding:10px;
+  margin-bottom:5px;
+  font-size: 1em;
+  border:0;
+  border-radius: 3px;
+  color:#fff;
+  letter-spacing: 2px;
+}
+.cred, button{
+  padding:10px;
+  text-align: center;
+  color:#222;
+}
+@media(min-width:768px){
+  .container{
+    width:320px;
+  }
+}
