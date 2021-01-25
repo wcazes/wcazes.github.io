@@ -1,7 +1,7 @@
 const data = {
     handle: "@wcazes",
     fullname: "William Cazes",
-    summary: "I am self taught Full Stack JavaScript Developer who creates things as a hobby. I currently have a non-tech day job that keeps me from writing code every waking second of my life.",
+    summary: "I'm a self taught Full Stack JavaScript Developer who creates things as a hobby. I currently have a non-tech day job that keeps me from writing code every waking second of my life.",
     personalLinks: [
         {
           name: 'WhosHiring.info',
