@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: 0px;
+}
+html{
+    overflow-y: scroll;
+}
+body{
+    background:#2d3748;
+    font-size:18px;
+    font-family: 'Roboto', sans-serif;
+    color:#efefef;  
+}
+header{
+    height:50vh;
+}
+
+main{
+    padding:0px 0px;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    height: 100%;
+}
+
+h1{
+    font-size:3rem;
+}
+h3{
+    font-size:2rem;
+}
+h1, h2, p{
+    margin-bottom:.2em;
+}
+a{
+    color:orange;
+    font-weight: bold;
+    text-decoration: none;
+}
+a:hover{
+    color:#efefef;
+}
+.inner-container{
+    margin:0px auto;
+    padding:0px 10px;
+    max-width:550px;
+}
+ul.projects{
+    margin-bottom:25px;
+    padding:10px 10px;
+    list-style-position:inside;
+}
+ul.projects li{
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+li.footer-list-items{
+    display: inline-block;
+    margin-right:4px;
+    margin-bottom: 10px;
+}
+
+li.footer-list-items a {
+    padding:2px 9px;
+    font-weight: 600;
+    height: 25px; 
+    border: 1px solid #ccc;
+    font-size: 16px;
+    background:#efefef; 
+    color: #333;
+    border-radius:3px;
+    text-decoration: none;
+}
+li.footer-list-items a:hover{
+    background: orange;
+    color:#1a202c;
+}
+footer{
+    padding:20px;
+    height: 100px;
+}

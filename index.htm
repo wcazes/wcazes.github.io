@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>William's Portfolio</title>
+        <meta name="description" content="I am self taught and enjoy Full Stack JavaScript Development as a hobby.">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="app">
+            <header>
+                <section class="inner-container">
+                    <h2><a href="">{{ data.handle }}</a></h2>
+                    <h1>{{ data.fullname }}</h1>
+                    <p>{{ data.summary }}</p>
+                </section>
+            </header>
+            <!--  -->
+            <main>
+                <section class="inner-container">
+                    <h2><i class="far fa-code-branch"></i> PERSONAL PROJECTS</h2>
+                    <ul class="projects">
+                        <li v-for="link in data.personalLinks" :key="link.id">
+                            <a>{{link.name}}</a> : {{link.description}}
+                        </li>
+                    </ul>
+                </section>
+                <section class="inner-container">
+                    <h2><i class="far fa-code"></i> SMALL PROJECTS</h2>
+                    <ul class="projects">
+                        <li v-for="project in data.projectLinks" :key="project.id">
+                            <a :href="project.github" target="_blank">{{ project.name }}</a> : {{ project.description }} [<a :href="project.github" >github</a>]
+                        </li>
+                    </ul>
+                </section>
+                <!-- <section class="inner-container"></section> -->
+            </main>
+            <!--  -->
+            <footer>
+                <section class="inner-container">
+                    <ul>
+                        <li class="footer-list-items" v-for="link in data.footerLinks" :key="link.id">
+                            <a :href="link.href" target="_blank">
+                                <i :class="link.icon"></i> {{link.name}}
+                            </a>
+                        </li>
+                    </ul> 
+                </section>  
+            </footer>
+        </div>
+        <script src="https://unpkg.com/vue@next"></script>
+        <script src="./app.js"></script>
+    </body>
+</html>
