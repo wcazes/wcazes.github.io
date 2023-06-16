@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/css/icofont.css">
+    <title>William Cazes</title>
+</head>
+<body>
+    <nav>
+        <div class="container">
+
+        </div>
+    </nav>
+
+    <!-- REFACTOR TO SOME SIMPLE BOXES TO HOLD CONTENT -->
+
+    <div class="grid">
+        <div class="profile container">
+            <div class="content-box">
+                <div class="profile-photo">
+                    <img id="photo" class="photo" src="/img/me.jpg" alt="My drawing of myself">
+                </div>
+                <div class="profile-text">
+                    <div class="icon-holder">
+                        <div class="icon"> 
+                            <i class="icofont-duotone icofont-location icofont-1x"></i> 
+                            <span>Louisiana</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="social-box">
+                <ul class="iconlist">
+                    <li>
+                        <div class="icon-holder">
+                            <div class="icon">
+                                <a href="" class="icon-link">
+                                        <i class="icofont-instagram icofont-2x"></i>
+                                </a>    
+                            </div>         
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div class="icon-holder">
+                            <div class="icon" class="icon-link">
+                                <a href="" class="icon-link">
+                                    <i class="icofont-twitter  icofont-2x"></i>
+                                </a>
+                            </div> 
+                        </div>
+                    </li>
+                    
+                    
+                    <li>
+                        <div class="icon-holder">
+                            <div class="icon"> 
+                                <a href="" class="icon-link">
+                                    <i class="icofont-linkedin icofont-2x"></i>
+                                </a>
+                            </div>      
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div class="icon-holder">
+                            <div class="icon">
+                                <a href="" class="icon-link"> 
+                                    <i class="icofont-github icofont-2x"></i>
+                                </a>
+                            </div> 
+                        </div>
+                    </li>
+                    
+                </ul>
+            </div>
+
+            <div class="content-box">
+                <h3>Good With...</h3>
+                <ul class="skills">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Sass</li>
+                    <li>Stylus</li>
+                </ul>
+                <h3>Re-learning...</h3>
+                <ul class="skills">
+                    <li>React</li>
+                    <li>Vue</li>
+                    <li>Python</li>
+                    <li>C#</li>
+                    <li>C++</li>
+                    <li>Java</li>
+                    <li>Godot</li>
+                    <li>Unity</li>
+                </ul>
+            </div>
+        </div>
+
+        <main class="container">
+            <div class="music-player">
+                <audio id="myAudio" loop>
+                    <source id="song" src="/mp3/song.mp3" type="audio/mp3" >
+                </audio>
+                <div id="play" class="player-button" onclick="playAudio()">
+                    <div class="icon-holder">
+                        <div class="icon">
+                            <i class="icofont-play-alt-1"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="pause" class="player-button" onclick="pauseAudio()">
+                    <div class="icon-holder">
+                        <div class="icon">
+                            <i class="icofont-pause"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="player-slider">
+                    <input 
+                    type="range" 
+                    min="0" 
+                    max="" 
+                    id="progressBar" 
+                    class="slider" 
+                    onchange="changeProgressBar()">
+                </div>
+            </div>
+            <div class="content-box">
+                <h3>Latest Projects</h2>
+                <ul class="projects">
+                    <li><a href="">A list item</a> - This is some placeholder text for the list description of the item.</li>
+                    <li><a href="">A list item</a> - This is some placeholder text for the list description of the item.</li>
+                    <li><a href="">A list item</a> - This is some placeholder text for the list description of the item.</li>
+                    <li><a href="">A list item</a> - This is some placeholder text for the list description of the item.</li>
+                    <li><a href="">A list item</a> - This is some placeholder text for the list description of the item.</li>
+                </ul>
+                <span class="view-github"><a href="http://github.com/wcazes">view github</a></span>
+            </div>
+            <div class="content-box">
+                <div class="temp">
+                    <h2>Coming Soon!</h2>
+                </div>
+            </div>
+            <div class="content-box">
+                <div class="temp">
+                    <h2>Coming Soon!</h2>
+                </div>
+            </div>
+            <div class="content-box">
+                <div class="temp">
+                    <h2>Coming Soon!</h2>
+                </div>
+            </div>
+        </main>
+        
+        <aside class="container">
+            <div class="aside-ad">
+                <img class="aside-ad-image"src="/img/bmc_qr.png">   
+            </div>
+            <div class="content-box"></div>
+        </aside>
+    </div>
+    
+    <!-- REFACTOR TO SOME SIMPLE BOXES TO HOLD CONTENT -->
+
+    <footer> 
+        <div class="container">
+            WilliamCazes.com
+        </div>
+    </footer>
+    <script src="/js/main.js"></script>
+</body>
+</html>
