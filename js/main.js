@@ -1,5 +1,3 @@
-
-
 const playButton = document.getElementById("play");
 const pauseButton = document.getElementById("pause");
 const photo = document.getElementById("photo");
@@ -27,6 +25,7 @@ function updateProgressBar(){
     progressBar.max = myAudio.duration;
     progressBar.value = myAudio.currentTime;
 }
+
 function changeProgressBar() {
     myAudio.currentTime = progressBar.value;
 };

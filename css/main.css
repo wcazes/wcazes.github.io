@@ -4,6 +4,9 @@
     justify-content: center;
     align-items: center;
 }
+.hide {
+    display: none;
+}
 
 :root{
     --red-color:#de2146;
@@ -136,12 +139,43 @@ ul.skills li {
 
 /* Music Player */
 .music-player{
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content:space-between;
     align-items: center;
-    background: #4e504f;
+    background: var(--dark-color);
     background-size:cover;
+}
+.music-i{
+    top:0;
+    right:0;
+    margin:5px;
+    position: absolute;
+    display: block;
+    background:var(--white-color);
+    color: var(--dark-color);
+    height:15px;
+    width: 15px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: xx-small;
+    font-weight: bolder;
+    cursor: pointer;
+    z-index: 99;
+}
+.music-i:hover + .hide{
+    position: absolute;
+    height:100%;
+    width: 100%;
+    top:5;
+    right:auto;
+    padding:20px;
+    display: block;
+    color:var(--dark-color);
+    background: var(--white-color);
+    z-index: 50;
+    font-size: small;
 }
 .player-button{
     width:50px;
@@ -235,6 +269,9 @@ footer{
     }
     .music-player{
         margin: 10px;
+        border-radius: 5px;
+    }
+    .music-i:hover + .hide{
         border-radius: 5px;
     }
 }
