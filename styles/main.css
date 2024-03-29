@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Source+Sans+Pro:wght@900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  background-color: #efefef;
+  color:#202020;
+  font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+h1 {
+  /* font-family: "Source Sans Pro", sans-serif; */
+  font-family: 'Roboto', sans-serif;
+  font-size: 5em;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+}
+
+#typewriter {
+  /* font-family: "Comfortaa", cursive; */
+  font-size: 1.5em;
+  margin: 15px 0;
+  text-transform: capitalize;
+}
+
+.divider {
+  color: #202020;
+}
+
+.icon {
+  color: #202020;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.icon:hover {
+  cursor: pointer;
+  background-color: none;
+  color:#800020;
+}
+img{
+  width:100%;
+  max-width: 300px;
+}
+.hero{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+.brand, .hero{
+  width: 100%;
+}
+.brand:first-child{
+  background: #202020;
+}
+.brand:nth-child(even){
+  background: #800020;
+}
+.brand:last-child{
+  background: #1f1f1f;
+}
+footer{
+  padding:10px;
+  text-align: center;
+}
